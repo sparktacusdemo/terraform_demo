@@ -50,7 +50,7 @@ resource "aws_subnet" "public" {
   availability_zone = var.av_zones[count.index]
 }
 ```
-- 1 file where we will define all the Terraform variables, this will help us to automate the process, for example if we need to update the VPC, or create another VPC. If we want to add a new zone in the VPC, we just have to update the variables Terraform file. The same , if we ned to change the subnets block CIDR.
+- 1 file where we will define all the Terraform variables, let say 'variables.tf'. This file will help us to automate the process, for example if we need to update the VPC, or create another VPC. If we want to add a new zone in the VPC, we just have to update the variables Terraform file. The same , if we ned to change the subnets block CIDR.
 
 ### Run Terraform
 Once the Terraform .tf files are completed, run the application
