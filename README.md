@@ -23,5 +23,7 @@ as we have 3 zones in our vpc; in total we need to configure 1 vpc, 6 subnets,6 
 - Terraform application
 - VS code IDE
 
-### Terraform  set up:
+### Terraform  set up
+
+Visit this documentation [here](https://learn.hashicorp.com/tutorials/terraform/install-cli#install-terraform)
 
