@@ -1,4 +1,4 @@
-### purpose <br>
+### Purpose <br>
 create a VPC in AWS, composed of 3 zones, to allow high availability for our EC2 instances and clusters we will create/launch in.
 <br>we need to create:
 1 vpc 
@@ -56,6 +56,7 @@ resource "aws_subnet" "public" {
 Once the Terraform .tf files are completed, run the application
 
 ```
+# from your Terraform directory: run the commands below
 #initialize terraform back end
 $--terraform init
 #--submit your plan
@@ -64,6 +65,14 @@ $ terraform plan
 $ terraform apply
 ```
 voila !
+
+<br>
+
+If you want to test, clone my repository, run the Terraform application. And do not forget to delete the infrastructure, to avoid being billed by aws; just run the Terraform command:
+```
+$ terraform destroy
+```
+
 
 ### Check
 Go into you aws console and check the infrastructure, i used to check in the following order:
