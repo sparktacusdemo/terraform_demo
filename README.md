@@ -1,5 +1,3 @@
-
-
 ### purpose <br>
 create a VPC in AWS, composed of 3 zones, to allow high availability for our EC2 instances and clusters we will create/launch in.
 <br>we need to create:
@@ -26,4 +24,19 @@ as we have 3 zones in our vpc; in total we need to configure 1 vpc, 6 subnets,6 
 ### Terraform  set up
 
 Visit this documentation [here](https://learn.hashicorp.com/tutorials/terraform/install-cli#install-terraform)
+
+### Overview
+We need to create 2 files:
+- 1 file (let say 'main.tf') in which we will list all the aws resource we need: vpc, subnets, etc 
+```
+resource "aws_vpc" "myvpc" {
+  cidr_block       = var.cidr_block
+  instance_tenancy = var.instance_tenancy
+
+  tags = {
+    Name = var.tags
+  }
+}
+```
+- 1 file where we will define all the Terraform variables, this will help us to automate the process, for example if we need to update the VPC, or create another VPC 
 
