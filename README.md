@@ -39,5 +39,15 @@ resource "aws_vpc" "myvpc" {
   }
 }
 ```
+
+```
+#example: create a subnet
+resource "aws_subnet" "public" {
+  count             = length(var.av_zones)
+  vpc_id            = aws_vpc.myvpc.id
+  cidr_block        = var.public_subnet_cidr_blocks[count.index]
+  availability_zone = var.av_zones[count.index]
+}
+```
 - 1 file where we will define all the Terraform variables, this will help us to automate the process, for example if we need to update the VPC, or create another VPC 
 
