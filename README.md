@@ -1,3 +1,5 @@
+# AWS Infrastructure automated configuration
+
 ### Purpose <br>
 Here i would like to create a VPC in AWS, composed of 3 zones, to allow high availability for our EC2 instances and clusters we will create/launch in.
 <br>we need to create:
@@ -16,6 +18,11 @@ we can apply 2 options:<br>
 <br>
 
 as we have 3 zones in our vpc; in total we need to configure 1 vpc, 6 subnets,6 route tables, 3 NAT gateway, 1 internet gateway, it would be better/'smart' to use the automated method. Lets use Terraform, to create the whole infrastructure.<br>
+
+![alt text](https://github.com/sparktacusdemo1/tweets_realtime_nlp_analysis/blob/master/img001.png)
+<br><br>
+[click here to enlarge the schema](https://github.com/sparktacusdemo1/tweets_realtime_nlp_analysis/blob/master/Workflow_presentation.pdf)
+<br>
 
 ### Tools
 
