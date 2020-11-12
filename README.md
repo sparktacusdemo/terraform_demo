@@ -1,5 +1,5 @@
 ### Purpose <br>
-create a VPC in AWS, composed of 3 zones, to allow high availability for our EC2 instances and clusters we will create/launch in.
+Here i would like to create a VPC in AWS, composed of 3 zones, to allow high availability for our EC2 instances and clusters we will create/launch in.
 <br>we need to create:
 1 vpc 
 subnets public and private: in total, we will have 2x3 = 6 subnetworks, my range of ip adresses 
@@ -58,10 +58,10 @@ Once the Terraform .tf files are completed, run the application
 ```
 # from your Terraform directory: run the commands below
 #initialize terraform back end
-$--terraform init
-#--submit your plan
+$--1/ terraform init
+#--2/ submit your plan
 $ terraform plan
-#--apply your plan
+#--3/ apply your plan
 $ terraform apply
 ```
 voila !
