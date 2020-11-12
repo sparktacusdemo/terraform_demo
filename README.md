@@ -28,7 +28,8 @@ Visit this documentation [here](https://learn.hashicorp.com/tutorials/terraform/
 ### Overview
 We need to create 2 files:
 - 1 file (let say 'main.tf') in which we will list all the aws resource we need: vpc, subnets, etc 
-```example: create a VPC in aws
+```
+#example: create a aws vpc
 resource "aws_vpc" "myvpc" {
   cidr_block       = var.cidr_block
   instance_tenancy = var.instance_tenancy
