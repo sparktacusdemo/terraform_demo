@@ -23,6 +23,8 @@ as we have 3 zones in our vpc; in total we need to configure 1 vpc, 6 subnets,6 
 <br><br>
 [click here to enlarge the scheme](https://github.com/sparktacusdemo/terraform_demo/blob/main/vpc_architecture_scheme.jpg)
 <br>
+some text with a link <a href="http://www.google.com" target="blank">google</a>
+<br>
 
 ### Tools
 
