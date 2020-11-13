@@ -1,7 +1,7 @@
 # AWS Infrastructure automated configuration
 
 ### Purpose <br>
-Here i would like to create a VPC in AWS, composed of 3 zones, to allow high availability for our EC2 instances and clusters we will create/launch in.
+Here i would like to create a VPC in AWS, composed of 3 zones, to allow high availability for our EC2 instances and clusters we will create/launch inside it.
 <br>we need to create:
 1 vpc 
 subnets public and private: in total, we will have 2x3 = 6 subnetworks, my range of ip adresses 
