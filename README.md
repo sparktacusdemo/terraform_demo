@@ -6,7 +6,7 @@ Here i would like to create a VPC in AWS, composed of 3 zones, to allow high ava
 1 vpc 
 subnets public and private: in total, we will have 2x3 = 6 subnetworks, my range of ip adresses 
 - 1 internet gateway, to allow my instances to communicate in the vpc and internet
-- 1 NAT gateaway, to allow my instances to connect to the internet , or other AWS services, like S3
+- 1 NAT gateaway, to allow my instances to connect to the internet , or other AWS services, like S3, Redshift, EMR ...
 - 2 elastic IPs adresses for my NAT gateaway
 - Route tables: 1 table per subnet, to map the network traffic, how it is directed
 <br>
