@@ -17,7 +17,7 @@ we can apply 2 options:<br>
 
 <br>
 
-as we have 3 zones in our vpc; in total we need to configure 1 vpc, 6 subnets,6 route tables, 3 NAT gateway (+ 3 elastic ip addresses), 1 internet gateway, it would be better/'smart' to use the automated method. Lets use Terraform, to create the whole infrastructure.<br>
+as we have 3 zones in our vpc; in total we need to configure 1 vpc, 6 subnets,6 route tables, 3 NAT gateway (+ 3 elastic ip addresses), 1 internet gateway, it would be better/'smart' to use the automated method. Lets use Terraform, to create the whole infrastructure, as code.<br>
 
 ![alt text](https://github.com/sparktacusdemo/terraform_demo/blob/main/thumb_.png)
 <br><br>
